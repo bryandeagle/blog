@@ -93,17 +93,36 @@ disableHugoGeneratorInject = false
   [params.logo]
     logoText     = "$ cd /home/bryan"
     logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
     logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
     logoCursorColor    = "#efa00b"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    logoCursorAnimate  = "0s"
+    logoCursorAnimate  = "2s"
 
   [params.portrait]
     path     = "/img/me.png"
     alt      = "Portrait"
     maxWidth = "200px"
+
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:bryan@dea.gl"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/bryandeagle"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/bryandeagle"
+
+  [[params.social]]
+    name = "hackerrank"
+    url  = "https://www.hackerrank.com/bryan51"
+
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/bryandeagle"
+
 
 [languages]
   [languages.en]
