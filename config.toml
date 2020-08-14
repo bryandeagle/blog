@@ -60,7 +60,7 @@ disableHugoGeneratorInject = false
 
   homeSubtitle = "Thoughts, How-Tos, and Ramblings"
 
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.  
   # gitUrl = ""
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
@@ -99,6 +99,11 @@ disableHugoGeneratorInject = false
     logoCursorColor    = "#efa00b"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     logoCursorAnimate  = "0s"
+
+  [params.portrait]
+    path     = "/img/me.png"
+    alt      = "Portrait"
+    maxWidth = "200px"
 
 [languages]
   [languages.en]
