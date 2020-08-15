@@ -1,4 +1,4 @@
-baseURL = "http://bryandeagle.github.io"
+baseURL = "https://dea.gl"
 title   = "Bryan Deagle"
 languageCode = "en-us"
 theme = "hello-friend-ng"
