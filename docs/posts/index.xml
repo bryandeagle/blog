@@ -1,0 +1,100 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Bryan Deagle</title>
+        <link>http://bryandeagle.github.io/posts/</link>
+        <description>Recent content in Posts on Bryan Deagle</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+        <atom:link href="http://bryandeagle.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>An Overview of HTTPS</title>
+            <link>http://bryandeagle.github.io/posts/2020/08/an-overview-of-https/</link>
+            <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+            
+            <guid>http://bryandeagle.github.io/posts/2020/08/an-overview-of-https/</guid>
+            <description>How HTTPS Works Type facebook.com into your web browser, and you&amp;rsquo;ll see a little lock appear to the left of the URL. That lock means you are using HTTPS and signifies that your connection to facebook.com is secure.
+Using HTTPS over the older, not secure, HTTP has two benefits:
+ The website your browser is talking to has proven itself to be facebook.com and is not just pretending to be. The communications your browser sends to the website are encrypted so that no-one except your browser and the website can read them.</description>
+            <content type="html"><![CDATA[<h2 id="how-https-works">How HTTPS Works</h2>
+<p>Type facebook.com into your web browser, and you&rsquo;ll see a little lock appear to the left of the URL. That lock means you are using <em>HTTPS</em> and signifies that your connection to facebook.com is secure.</p>
+<p>Using HTTPS over the older, not secure, HTTP has two benefits:</p>
+<ol>
+<li>The website your browser is talking to has proven itself to be facebook.com and is not just pretending to be.</li>
+<li>The communications your browser sends to the website are encrypted so that no-one except your browser and the website can read them.</li>
+</ol>
+<p>Those communications can include usernames, passwords, credit card numbers, and other critical information you wouldn&rsquo;t want in the hands of anyone but the real facebook.com.</p>
+<h2 id="ensuring-identity">Ensuring Identity</h2>
+<p>Your browser trusts that the website truly is facebook.com because it has presented us with a <em>certificate</em> stating it is facebook.com. If you click the lock on your browser, you can view it yourself.</p>
+<p>&ldquo;But why should you trust that certificate, you ask?&rdquo; Great question. Because, like real-world certificates, someone you should trust has signed it.</p>
+<p>Inspecting facebook.com&rsquo;s certificate shows that DigiCert signed it.</p>
+<p>&ldquo;Hold on. Who is DigiCert, and why should I trust them?&rdquo; you ask. Another great question. I like where your head&rsquo;s at.</p>
+<p>Digicert is a <em>Certificate Authority</em>. That means they are an organization able to sign certificates to prove that they are valid.</p>
+<p>I trust DigiCert because Microsoft trusts them, and because I run Windows, I have no choice but to trust Microsoft. Because Microsoft trusts DigiCert as a Certificate Authority, Windows trusts certificates signed by DigiCert.</p>
+<p>You can view this information by searching for <strong>Manage computer certificates</strong> in your start menu. From there, click on <strong>Trusted Root Certification Authorities »  Certificates</strong>, and in that long list, you should see DigiCert.</p>
+<p>Microsoft also publishes the list of Certificate Authorities <a href="https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT">here</a>. On that page, you can find DigiCert as well.</p>
+<p>And so that&rsquo;s the chain of trust. You trust Microsoft because you run their operating system. Microsoft has said you can trust what DigiCert says. And finally, DigiCert has said, you can trust the server you&rsquo;re talking to is facebook.com.</p>
+<p>You can rest easy knowing you&rsquo;re not sending private information to somebody pretending to be facebook.com.</p>
+<h2 id="ensuring-privacy">Ensuring Privacy</h2>
+<p>Even though that&rsquo;s the real facebook.com, who might be able to intercept those communications and read your private data? That&rsquo;s an easy enough question to answer. On Windows, open up a command prompt and type:</p>
+<pre><code>tracert facebook.com
+</code></pre><p>On Linux or Mac OS, type:</p>
+<pre><code>traceroute facebook.com
+</code></pre><p>That command displays all the intermediate servers your communications go through before making it to facebook.com. Each line is a different server, and the first line is likely your router.</p>
+<p>Each item between your router and facebook.com is another server capable of reading all the unencrypted information you send to facebook.com. That can sometimes be dozens of servers that are not you, or facebook.com, in a position to read all communications between you and facebook.com.</p>
+<h2 id="upgrading-to-https">Upgrading to HTTPS</h2>
+<p>I hope you understand the value that HTTPS provides and the meaning behind that little lock symbol. There&rsquo;s really no downside to using HTTPS, so you should try to use it everywhere it&rsquo;s available.</p>
+<p>How did it know to use HTTPS and not the regular old, unsafe HTTP when I typed in facebook.com?</p>
+<p>Not all websites support HTTPS. So, when you type in facebook.com, your browser requested the HTTP version of facebook.com (<a href="http://facebook.com">http://facebook.com</a>). Facebook&rsquo;s servers then responded by redirecting you to the HTTPS version of the site (<a href="https://facebook.com">https://facebook.com</a>).</p>
+<p>If you care to inspect the network traffic, you can see something like what&rsquo;s shown below. That&rsquo;s facebook telling your browser, &ldquo;We support HTTPS, and you&rsquo;re going to want to use that instead of regular old HTTP.&rdquo;</p>
+<pre><code>General
+  Request URL: http://facebook.com/
+  Request Method: GET
+  Status Code: 307 Internal Redirect
+  Referrer Policy: no-referrer-when-downgrade
+Response Headers:
+  Location: https://facebook.com/
+  Non-Authoritative-Reason: HSTS
+...
+</code></pre><p>That&rsquo;s very nice of Facebook to be looking out for my privacy and security. But we should be taking this into our own hands, and not depending on websites to upgrade us to HTTPS, and encrypt our communications.</p>
+<p>Enter HTTPS Everywhere.</p>
+<h2 id="https-everywhere">HTTPS Everywhere</h2>
+<p><a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a> is a Firefox, Chrome, and Opera extension that encrypts your communications with many major websites, which makes your browsing more secure.</p>
+<p>By using HTTPS Everywhere, you can rest easy knowing that your browser is doing everything it can, upgrade communications to HTTPS wherever possible, and not depend on websites themselves to secure communications.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>TLS/SSL Certificates</title>
+            <link>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</link>
+            <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+            
+            <guid>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>TLS/SSL Certificates</title>
+            <link>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</link>
+            <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+            
+            <guid>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+        <item>
+            <title>Virtual Private Networks</title>
+            <link>http://bryandeagle.github.io/posts/2020/08/virtual-private-networks/</link>
+            <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+            
+            <guid>http://bryandeagle.github.io/posts/2020/08/virtual-private-networks/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+    </channel>
+</rss>

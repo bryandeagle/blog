@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo 101 on Bryan Deagle</title>
+    <link>http://bryandeagle.github.io/series/hugo-101/</link>
+    <description>Recent content in Hugo 101 on Bryan Deagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://bryandeagle.github.io/series/hugo-101/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Overview of HTTPS</title>
+      <link>http://bryandeagle.github.io/posts/2020/08/an-overview-of-https/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://bryandeagle.github.io/posts/2020/08/an-overview-of-https/</guid>
+      <description>How HTTPS Works Type facebook.com into your web browser, and you&amp;rsquo;ll see a little lock appear to the left of the URL. That lock means you are using HTTPS and signifies that your connection to facebook.com is secure.
+Using HTTPS over the older, not secure, HTTP has two benefits:
+ The website your browser is talking to has proven itself to be facebook.com and is not just pretending to be. The communications your browser sends to the website are encrypted so that no-one except your browser and the website can read them.</description>
+    </item>
+    
+    <item>
+      <title>TLS/SSL Certificates</title>
+      <link>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TLS/SSL Certificates</title>
+      <link>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://bryandeagle.github.io/posts/2020/08/tls/ssl-certificates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual Private Networks</title>
+      <link>http://bryandeagle.github.io/posts/2020/08/virtual-private-networks/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://bryandeagle.github.io/posts/2020/08/virtual-private-networks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
