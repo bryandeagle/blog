@@ -1,19 +1,14 @@
 +++
-title = "About"
-date = "2014-04-09"
-aliases = ["about-us","about-hugo","contact"]
+title = "About Me"
+date = "2020-08-14"
+aliases = ["about-us","about","contact"]
 [ author ]
-  name = "Hugo Authors"
+  name = "Bryan Deagle"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+Hi, I'm **Bryan Deagle**. I'm an engineer located in Austin, Texas. I use this domain to:
 
-It makes use of a variety of open source projects including:
-
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+- Disconnect my email address from any particular service
+  - You can reach me at **bryan@dea.gl** (See what I did there?)
+- Keep a record of new technologies I learn about, and
+- As a portfolio,  to show that I at least know a thing or two about a thing or two
