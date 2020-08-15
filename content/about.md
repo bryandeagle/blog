@@ -6,9 +6,12 @@ aliases = ["about-us","about","contact"]
   name = "Bryan Deagle"
 +++
 
-Hi, I'm **Bryan Deagle**. I'm an engineer located in Austin, Texas. I use this domain to:
+### Hi, I'm Bryan Deagle.
 
-- Disconnect my email address from any particular service
-  - You can reach me at **bryan@dea.gl** (See what I did there?)
+I'm an engineer in Austin, Texas. I use this domain to:
+
+- Disconnect my email address from any corporations
+  - Reach me at **bryan@dea.gl** (See what I did there?)
 - Keep a record of new technologies I learn about, and
-- As a portfolio,  to show that I at least know a thing or two about a thing or two
+- Show that I know a thing or two about technology
+  - If you want to hire me, [here's my resume](https://bryandeagle.github.io/resume/resume.pdf)
