@@ -6,3 +6,5 @@ cd public
 git add .
 git commit -m "Rebuilding Site %mytime% %mydate%"
 git push origin master
+echo Complete. Press Any Key to Exit...
+pause > nul
