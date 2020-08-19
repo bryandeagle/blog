@@ -14,4 +14,4 @@ I'm an engineer in Austin, Texas. I use this domain to:
   - Reach me at **bryan@dea.gl** (See what I did there?)
 - Keep a record of new technologies I learn about, and
 - Show that I know a thing or two about technology
-  - If you want to hire me, [here's my resume](https://bryandeagle.github.io/resume/resume.pdf)
+  - If you want to hire me, [here's my resume](https://dea.gl/resume/resume.pdf)
