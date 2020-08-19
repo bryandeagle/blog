@@ -1,5 +1,5 @@
 +++
-title = "An Overview of HTTPS"
+title = "An Overview of the HTTPS Protocol"
 description = ""
 type = ["posts","post"]
 tags = [

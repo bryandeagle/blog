@@ -7,7 +7,8 @@ tags = [
     "personal",
     "web"
 ]
-date = "2020-08-14"
+draft = true
+date = "2020-08-01"
 categories = [
     "Technology"
 ]

@@ -1,3 +1,17 @@
++++
+title = "Hands-On with TLS/SSL Certificates"
+description = ""
+type = ["posts","post"]
+tags = [
+    "https",
+    "personal",
+    "web"
+]
+date = "2020-08-18"
+[ author ]
+  name = "Bryan Deagle"
++++
+
 ## Introduction
 
 In this article, I'll discuss TLS/SSL certificates. To learn more than just the theory, I'll be acting as my own Certificate Authority, which will allow me to generate all the required files for TLS/SSL communication.

@@ -1,4 +1,17 @@
-# Setting up a Man-in-the-Middle
++++
+title = "Man-in-the-Middle attacks"
+description = ""
+draft = "True"
+type = ["posts","post"]
+tags = [
+    "https",
+    "personal",
+    "web"
+]
+date = "2020-12-31"
+[ author ]
+  name = "Bryan Deagle"
++++
 
 ## Getting a raspberry pi together
 
