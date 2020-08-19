@@ -1,5 +1,5 @@
 +++
-title = "TLS/SSL Certificates"
+title = "An Overview of DNS Servers"
 description = ""
 type = ["posts","post"]
 tags = [
@@ -7,6 +7,7 @@ tags = [
     "personal",
     "web"
 ]
+draft = true
 date = "2020-08-14"
 categories = [
     "Technology"
