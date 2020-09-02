@@ -8,7 +8,7 @@ PygmentsStyle = "monokai"
 
 paginate  = 10
 rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # RSS only
 
 # googleAnalytics = ""
 # disqusShortname = ""
@@ -24,17 +24,17 @@ buildFuture  = false
 buildExpired = false
 canonifyURLs = true
 
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
+enableRobotsTXT                      = true
+enableGitInfo                        = false
+enableEmoji                          = true
 enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
+disableRSS                           = false
+disableSitemap                       = false
+disable404                           = false
+disableHugoGeneratorInject           = false
 
 [permalinks]
-  posts = "/posts/:year/:month/:title/"
+  posts = "/posts/:title/"
 
 [author]
   name = "Bryan Deagle"
@@ -45,7 +45,6 @@ disableHugoGeneratorInject = false
 [taxonomies]
   tag      = "tags"
   category = "categories"
-  series   = "series"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -53,10 +52,10 @@ disableHugoGeneratorInject = false
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # Metadata mostly used in document's head
-  description = "Nice theme for homepages and blogs"
-  keywords = ""
-  images = [""]
+  # Metadata used in document's head
+  description = "The homepage of Bryan Deagle"
+  keywords    = "Bryan Deagle"
+  images      = [""]
 
   homeSubtitle = "Thoughts, How-Tos, and Ramblings"
 
@@ -82,17 +81,17 @@ disableHugoGeneratorInject = false
 
   # Default theme "light" or "dark"
   defaultTheme = "dark"
-  themeColor = "#252627"
+  themeColor   = "#252627"
 
   # Colors for favicons
   [params.favicon.color]
-    mask = "#252627"
+    mask          = "#252627"
     msapplication = "#252627"
-    theme = "#252627"
+    theme         = "#252627"
 
   [params.logo]
-    logoText     = "$ cd /home/bryan"
-    logoHomeLink = "/"
+    logoText           = "$ cd /home/bryan"
+    logoHomeLink       = "/"
     logoCursorDisabled = false
     logoCursorColor    = "#efa00b"
     logoCursorAnimate  = "2s"
@@ -123,7 +122,6 @@ disableHugoGeneratorInject = false
     name = "telegram"
     url  = "https://t.me/bryandeagle"
 
-
 [languages]
   [languages.en]
     subtitle  = ""
@@ -139,3 +137,15 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+  # [[menu.main]]
+  #   identifier = "web"
+  #   name       = "Web"
+  #   url        = "categories/web/"
+  # [[menu.main]]
+  #   identifier = "Coding"
+  #   name       = "Coding"
+  #   url        = "categories/coding/"
+  # [[menu.main]]
+  #   identifier = "pm"
+  #   name       = "Project Mgmt"
+  #   url        = "categories/project-management/"
