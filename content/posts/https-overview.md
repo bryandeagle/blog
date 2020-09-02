@@ -1,19 +1,7 @@
 +++
 title = "An Overview of the HTTPS Protocol"
-description = ""
-type = ["posts","post"]
-tags = [
-    "https",
-    "personal",
-    "web"
-]
+tags = ["https", "personal", "web"]
 date = "2020-08-14"
-categories = [
-    "Technology"
-]
-series = ["Hugo 101"]
-[ author ]
-  name = "Bryan Deagle"
 +++
 
 ## How HTTPS Works

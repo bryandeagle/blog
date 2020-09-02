@@ -1,9 +1,6 @@
 +++
 title = "About Me"
 date = "2020-08-14"
-aliases = ["about-us","about","contact"]
-[ author ]
-  name = "Bryan Deagle"
 +++
 
 ### Hi, I'm Bryan Deagle.

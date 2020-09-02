@@ -1,16 +1,7 @@
 +++
 title = "Learning About Man-in-the-Middle Attacks with a Raspberry Pi"
-description = ""
-draft = "True"
-type = ["posts","post"]
-tags = [
-    "https",
-    "personal",
-    "web"
-]
+tags = ["https", "personal", "web", "security"]
 date = "2020-12-31"
-[ author ]
-  name = "Bryan Deagle"
 +++
 
 ## Setting up the Raspberry Pi

@@ -1,15 +1,7 @@
 +++
 title = "Hands-On with TLS/SSL Certificates"
-description = ""
-type = ["posts","post"]
-tags = [
-    "https",
-    "personal",
-    "web"
-]
+tags = ["https", "personal", "web"]
 date = "2020-08-18"
-[ author ]
-  name = "Bryan Deagle"
 +++
 
 ## Introduction
