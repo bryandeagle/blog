@@ -14,7 +14,7 @@ date = "2020-08-18"
 
 ## Introduction
 
-In this article, I'll discuss TLS/SSL certificates. To learn more than just the theory, I'll be acting as my own Certificate Authority, which will allow me to generate all the required files for TLS/SSL communication.
+In this post, I'll discuss TLS/SSL certificates. To learn more than just the theory, I'll be acting as my own Certificate Authority, which will allow me to generate all the required files for TLS/SSL communication.
 
 ## What is SSL/TLS?
 

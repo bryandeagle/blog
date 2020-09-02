@@ -1,5 +1,5 @@
 +++
-title = "Man-in-the-Middle attacks"
+title = "Learning About Man-in-the-Middle Attacks with a Raspberry Pi"
 description = ""
 draft = "True"
 type = ["posts","post"]
@@ -13,23 +13,26 @@ date = "2020-12-31"
   name = "Bryan Deagle"
 +++
 
-## Getting a raspberry pi together
+## Setting up the Raspberry Pi
 
-Download the Raspberry Pi image from [the official site](https://www.raspberrypi.org/downloads/)
+I download the Raspberry Pi image from [the official site](https://www.raspberrypi.org/downloads/)
 
-## Securing the Raspberry pi
+I followed [this article](https://www.raspberrypi.org/documentation/configuration/security.md) to add some reasonable security to the pi.
 
-Follow [this article](https://www.raspberrypi.org/documentation/configuration/security.md) to secure your raspberry pi.
-
-If you've installed ufw, you'll want to allow HTTP and HTTPS.
+Since I've installed the firewall ufw, I'll be allowing SSH, HTTP and HTTPS with the following commands
 
 ```
+ufw allow SSH
 ufw allow HTTP
 ufw allow HTTPS
 ```
 
+## Configuring the Raspberry Pi as a Gateway
+
+
+
 ## Installing MITM Proxy
 
 ```
-apt install mitmproxy
+apt update && apt install mitmproxy
 ```
