@@ -1,6 +1,5 @@
 +++
 title = "Hands-On with TLS/SSL Certificates"
-tags = ["https", "personal", "web"]
 date = "2020-08-18"
 +++
 

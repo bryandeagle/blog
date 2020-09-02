@@ -1,6 +1,5 @@
 +++
 title = "An Overview of the HTTPS Protocol"
-tags = ["https", "personal", "web"]
 date = "2020-08-14"
 +++
 

@@ -1,6 +1,5 @@
 +++
 title = "Learning About Man-in-the-Middle Attacks with a Raspberry Pi"
-tags = ["https", "personal", "web", "security"]
 date = "2020-12-31"
 +++
 
