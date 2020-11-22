@@ -8,6 +8,15 @@ categories = ["Web"]
 
 I download the Raspberry Pi image from [the official site](https://www.raspberrypi.org/downloads/)
 
+## Securing the Raspberry Pi
+
+C
+
+```
+passwd
+```
+
+
 I followed [this article](https://www.raspberrypi.org/documentation/configuration/security.md) to add some reasonable security to the pi.
 
 Since I've installed the firewall ufw, I'll be allowing SSH, HTTP and HTTPS with the following commands
