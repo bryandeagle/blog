@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Triangle Quest"
-date = "2020-09-01"
+date = "2020-08-18"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++

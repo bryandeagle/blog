@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Validating Matrix Script"
-date = "2020-09-01"
+date = "2020-08-09"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++

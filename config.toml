@@ -133,19 +133,19 @@ disableHugoGeneratorInject           = false
     identifier = "about"
     name       = "About"
     url        = "about/"
+  #[[menu.main]]
+  #  identifier = "posts"
+  #  name       = "Posts"
+  #  url        = "posts/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
-  # [[menu.main]]
-  #   identifier = "web"
-  #   name       = "Web"
-  #   url        = "categories/web/"
-  # [[menu.main]]
-  #   identifier = "Coding"
-  #   name       = "Coding"
-  #   url        = "categories/coding/"
-  # [[menu.main]]
+    identifier = "web"
+    name       = "Web"
+    url        = "categories/web/"
+  [[menu.main]]
+    identifier = "Coding"
+    name       = "Coding"
+    url        = "categories/coding/"
+  #  [[menu.main]]
   #   identifier = "pm"
   #   name       = "Project Mgmt"
   #   url        = "categories/project-management/"

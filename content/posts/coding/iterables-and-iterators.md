@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Iterables and Iterators"
-date = "2020-09-01"
+date = "2020-08-08"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++

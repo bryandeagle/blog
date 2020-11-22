@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Validating Email Addresses with a Filter"
-date = "2020-09-01"
+date = "2020-08-20"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++

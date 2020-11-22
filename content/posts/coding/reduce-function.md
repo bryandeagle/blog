@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Reduce Function"
-date = "2020-09-01"
+date = "2020-08-14"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++

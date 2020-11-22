@@ -1,6 +1,6 @@
 +++
 title = "Hackerrank Python: Time Delta"
-date = "2020-09-01"
+date = "2020-08-17"
 tags = ["python", "hackerrank"]
 categories = ["Coding"]
 +++
