@@ -1,5 +1,5 @@
 +++
-title = "Setting Up and Hardening a Raspberry Pi"
+title = "Hardening a Raspberry Pi"
 date = "2020-11-20"
 categories = ["Web"]
 +++
