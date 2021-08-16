@@ -130,14 +130,6 @@ disableHugoGeneratorInject           = false
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-  #[[menu.main]]
-  #  identifier = "posts"
-  #  name       = "Posts"
-  #  url        = "posts/"
-  [[menu.main]]
     identifier = "web"
     name       = "Web"
     url        = "categories/web/"
@@ -145,7 +137,3 @@ disableHugoGeneratorInject           = false
     identifier = "Coding"
     name       = "Coding"
     url        = "categories/coding/"
-  #  [[menu.main]]
-  #   identifier = "pm"
-  #   name       = "Project Mgmt"
-  #   url        = "categories/project-management/"
