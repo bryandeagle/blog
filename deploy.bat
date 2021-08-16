@@ -11,7 +11,6 @@ cd public
 git add .
 git commit -m "Rebuilding Site %mytime% %mydate%"
 git push origin master
-cls
 :::   ____                      _      _       
 :::  / ___|___  _ __ ___  _ __ | | ___| |_ ___ 
 ::: | |   / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
